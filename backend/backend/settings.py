@@ -5,7 +5,7 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key-here')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'lFlnJMW7t6_bLEXTV0GnEgNxYltxx9JTGYpoYTqQGRxSx4_zaL4RG96bJa1yhIbsIU4')
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
