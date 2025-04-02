@@ -1,0 +1,7 @@
+{
+    "app": {
+      "env": {
+        "REACT_APP_API_URL": "https://file-management-app-akle.onrender.com"
+      }
+    }
+  }
