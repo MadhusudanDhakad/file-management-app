@@ -11,7 +11,7 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = [
-    'file-management-app.onrender.com', 
+    'file-management-app-akle.onrender.com', 
     'localhost',
     '127.0.0.1',
     'file-management-app.cyclic.app'
