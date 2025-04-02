@@ -1,0 +1,4 @@
+dj-database-url==2.0.0
+whitenoise==6.4.0
+gunicorn==20.1.0
+psycopg2==2.9.10
