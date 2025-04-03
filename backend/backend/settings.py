@@ -131,8 +131,8 @@ SIMPLE_JWT = {
 
 # CORS Settings
 CORS_ALLOWED_ORIGINS = [
-    "https://your-cyclic-app.cyclic.app",  # Your frontend URL
-    "http://localhost:3000",              # Local development
+    "https://file-management-app.vercel.app", 
+    "http://localhost:3000",              
 ]
 
 # Only enable this in development if needed
