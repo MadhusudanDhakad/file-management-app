@@ -39,32 +39,51 @@ api.interceptors.response.use(
   }
 );
 
+// export const authService = {
+// //   login: (email, password) => api.post('/login/', { email, password }),
+//     login: async (email, password) => {
+//         try {
+//         const response = await api.post('/login/', { email, password });
+//         console.log('Login response:', response.data);
+//         return response;
+//         } catch (error) {
+//         console.error('Login error:', error.response);
+//         throw error;
+//         }
+//     },
+//     register: (userData) => api.post('/register/', userData),
+// };
+
+// export const profileService = {
+//   getProfile: () => api.get('/profile/'),
+//   updateProfile: (profileData) => api.put('/profile/', profileData),
+// };
+
+// export const addressService = {
+//   getAddresses: () => api.get('/addresses/'),
+//   createAddress: (addressData) => api.post('/addresses/', addressData),
+//   updateAddress: (id, addressData) => api.put(`/addresses/${id}/`, addressData),
+//   deleteAddress: (id) => api.delete(`/addresses/${id}/`),
+// };
+
 export const authService = {
-//   login: (email, password) => api.post('/login/', { email, password }),
-    login: async (email, password) => {
-        try {
-        const response = await api.post('/login/', { email, password });
-        console.log('Login response:', response.data);
-        return response;
-        } catch (error) {
-        console.error('Login error:', error.response);
-        throw error;
-        }
-    },
-    register: (userData) => api.post('/register/', userData),
+  login: (email, password) => api.post('/auth/login/', { email, password }),
+  register: (userData) => api.post('/auth/register/', userData),
 };
 
 export const profileService = {
-  getProfile: () => api.get('/profile/'),
-  updateProfile: (profileData) => api.put('/profile/', profileData),
+  getProfile: () => api.get('/user/profile/'),
+  updateProfile: (profileData) => api.put('/user/profile/', profileData),
 };
 
 export const addressService = {
-  getAddresses: () => api.get('/addresses/'),
-  createAddress: (addressData) => api.post('/addresses/', addressData),
-  updateAddress: (id, addressData) => api.put(`/addresses/${id}/`, addressData),
-  deleteAddress: (id) => api.delete(`/addresses/${id}/`),
+  getAddresses: () => api.get('/user/addresses/'),
+  createAddress: (addressData) => api.post('/user/addresses/', addressData),
+  updateAddress: (id, addressData) => api.put(`/user/addresses/${id}/`, addressData),
+  deleteAddress: (id) => api.delete(`/user/addresses/${id}/`),
 };
+
+
 
 export const fileService = {
   uploadFile: (file) => {
